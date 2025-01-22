@@ -39,6 +39,7 @@ struct TaskExample: View {
     
     var body: some View {
         VStack(alignment: .center){
+            
 //            if let image = viewModel.image{
 //                Image(uiImage: image)
 //            }else {
@@ -64,9 +65,14 @@ struct TaskExample: View {
             imageTask = Task(priority: .background){
                 try? await viewModel.fetchImage()
                 try? await viewModel.fetchImage2()
-                
-                
             }
+        }
+        
+        .task {
+            async let fetchImage1 = viewModel.fetchImage()
+            async let fetchImage2 = viewModel.fetchImage2()
+            
+            let (image1 , image2) = await (try? fetchImage1 , try? fetchImage2)
         }
         .onDisappear{
             imageTask?.cancel()
