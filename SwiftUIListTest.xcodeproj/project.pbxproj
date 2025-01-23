@@ -67,6 +67,7 @@
 		7E0F81482D3E7BCD00B5CD50 /* TaskExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F81472D3E7BCD00B5CD50 /* TaskExample.swift */; };
 		7E0F814A2D3FA81400B5CD50 /* SingleTonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F81492D3FA81400B5CD50 /* SingleTonView.swift */; };
 		7E0F814C2D3FD73000B5CD50 /* JokesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F814B2D3FD73000B5CD50 /* JokesApi.swift */; };
+		7E8E8DA52D4221090024C1A6 /* AsyncPublisherBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E8DA42D4221090024C1A6 /* AsyncPublisherBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		7E0F81472D3E7BCD00B5CD50 /* TaskExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskExample.swift; sourceTree = "<group>"; };
 		7E0F81492D3FA81400B5CD50 /* SingleTonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTonView.swift; sourceTree = "<group>"; };
 		7E0F814B2D3FD73000B5CD50 /* JokesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApi.swift; sourceTree = "<group>"; };
+		7E8E8DA42D4221090024C1A6 /* AsyncPublisherBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublisherBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				19732FFF2C98B1E200F6AFA5 /* DoCatchTryThrowsBootcamp.swift */,
 				7E0F81472D3E7BCD00B5CD50 /* TaskExample.swift */,
 				7E0F814B2D3FD73000B5CD50 /* JokesApi.swift */,
+				7E8E8DA42D4221090024C1A6 /* AsyncPublisherBootcamp.swift */,
 			);
 			path = concurrencyexample;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				199A21282B5419FF00A610AA /* DetailsView.swift in Sources */,
 				194189042BA4439A0027A834 /* ParentView.swift in Sources */,
 				199A21122B540D8900A610AA /* ContentView.swift in Sources */,
+				7E8E8DA52D4221090024C1A6 /* AsyncPublisherBootcamp.swift in Sources */,
 				199515C82C06578000BC1510 /* PersonInformation.swift in Sources */,
 				7E0F81442D3E40FD00B5CD50 /* ErrorHandle.swift in Sources */,
 				199A212C2B54744400A610AA /* CustomNavigationLink.swift in Sources */,
