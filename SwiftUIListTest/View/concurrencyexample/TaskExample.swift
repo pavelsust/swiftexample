@@ -67,7 +67,6 @@ struct TaskExample: View {
                 try? await viewModel.fetchImage2()
             }
         }
-        
         .task {
             async let fetchImage1 = viewModel.fetchImage()
             async let fetchImage2 = viewModel.fetchImage2()

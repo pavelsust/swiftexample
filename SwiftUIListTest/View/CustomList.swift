@@ -17,7 +17,7 @@ struct CustomList: View {
             HStack{
                 Image("hiddenlake")
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 40, height: 50)
                 
                 Text(animal.title)
                     .font(.headline)
@@ -25,7 +25,9 @@ struct CustomList: View {
                 
                 Text("Nothing")
                     .makeCustomTitle()
+                
                 Spacer()
+                
                 if animal.isFavourite{
                     Image(systemName: "star.fill")
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -34,16 +36,18 @@ struct CustomList: View {
                         .foregroundColor(.gray)
                 }
                 
-            }.frame(height: 50)
+            }
                 .padding()
                 .onTapGesture(perform: {
                     contentClick(animal.title)
                 })
         }
-        .frame(width: .infinity, height: 65)
+        .frame(width: .infinity, height: 70)
         .shadow(radius: 5)
         .background(.white)
         .foregroundColor(.white)
+        .padding(.leading , 10)
+        .padding(.trailing , 10)
     }
 }
 

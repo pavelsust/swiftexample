@@ -88,26 +88,23 @@ struct ListView: View {
             }
             .navigationTitle("List Item")
             .toolbar{
-                ToolbarItem{
+                ToolbarItem {
+                    
                     Menu {
                         Picker("Category", selection: $filter){
-                            ForEach(FilterCategory.allCases){category in
+                            ForEach(FilterCategory.allCases){ category in
+                                
                                 Text(category.rawValue).tag(category)}
+                            
                         }.pickerStyle(.inline)
-                        
-                        Toggle(isOn: $showFavoritesOnly) {
-                            Label(getUserData(), systemImage: "star.fill")
-                        }
                         
                     }
                      label: {
                          Label("Filter", systemImage: "slider.horizontal.3")
                      }
-                      
                 }
             }
         }
-        
     }
 }
 

@@ -29,8 +29,6 @@ class AsyncPublisherBootcampViewModel : ObservableObject {
     let manager = AsyncPublisherDatamanager()
     var cancellables = Set<AnyCancellable>()
     
-    
-    
     init() {
         addSubscribers()
     }

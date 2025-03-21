@@ -102,7 +102,7 @@ class DocatchTryThrowBootcampViewModel : ObservableObject{
             if let newTitle = newTitle {
                 self.text = newTitle
             }
-        } catch let error{
+        } catch let error {
             self.text = error.localizedDescription
         }
     }
